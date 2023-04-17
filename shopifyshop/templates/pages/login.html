@@ -1,0 +1,27 @@
+{% extends 'globel.html' %}
+
+{% block content %}
+    <div class="containerLogin">
+        <div class="text">
+            <h1>LOGIN</h1>
+        </div>
+        <form method="POST" class="form">
+            {% csrf_token %}
+            <div class="animated-input">
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <input class="btn" type="submit" value="Log In">
+            </div>
+            <div class="check">
+                <div>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="disc"></label>
+                    <label for="check" class="remember">Remember</label>
+                </div>
+                <p class="forget"><a href="#">Forget Password ?</a></p>
+            </div>
+        </form>
+        <p class="account"><a href="#">Create Account ?</a></p>
+    </div>
+{% endblock content %}
+    

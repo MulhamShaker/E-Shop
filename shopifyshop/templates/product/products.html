@@ -1,0 +1,21 @@
+{% extends 'globel.html' %}
+
+
+{% block content %}
+    
+    {% for products in product %}
+    <div class="products-list">
+        <div class="product-card">
+            <div class="product-card img">
+                <img src="{{products.image.url}}" alt="">
+                <h3>{{products.name}}</h3>
+                <h3>{{products.content}}</h3>
+                <h3 class="price">{{products.price}}</h3>
+            </div>
+        </div>
+    </div>
+
+    {% endfor %}
+        
+{% endblock content %}
+    

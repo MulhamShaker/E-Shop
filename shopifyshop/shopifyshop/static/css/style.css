@@ -1,0 +1,321 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    font-size: 16px; 
+    line-height: 1.5; 
+    color: #333; 
+}
+
+.navbar {
+    background-color: #160335; 
+    color: #fff;
+    padding: 20px; 
+}
+
+.navbar ul {
+    list-style-type: none; 
+    display: flex; 
+    justify-content: center; 
+}
+
+.navbar li {
+    margin-right: 10px;
+}
+
+.navbar a {
+    color: #fff; 
+    text-decoration: none; 
+}
+
+.navbar a:hover {
+    color: #5f1acf; 
+}
+
+.container {
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 50px; 
+    box-sizing: border-box;
+}
+
+.row {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px; 
+}
+
+.col {
+    grid-column: span 1; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.btn {
+    display: inline-block; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-align: center; 
+    text-decoration: none; 
+    background-color: #35077e; 
+    color: #fff; 
+    border: 1px solid #35077e;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.btn:hover {
+    background-color: #46109c; 
+    border-color: #46109c;
+}
+
+
+.input-field {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 14px; 
+    color: #333; 
+    transition: border-color 0.3s ease; 
+}
+
+.input-field:focus {
+    outline: none; 
+    border-color: #46109c; 
+}
+
+
+
+
+
+.products-list {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
+}
+
+.product-card {
+    background-color: #f8f8f8; 
+    padding: 20px; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.product-card img {
+    max-width: 40%; 
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 5px; 
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin-top: 10px; 
+}
+
+.product-card p {
+    margin-top: 5px; 
+}
+
+.product-card .price {
+    font-weight: bold; 
+    margin-top: 10px; 
+}
+
+.product-card .btn {
+    display: inline-block; 
+    margin-top: 10px;
+    padding: 10px 20px; 
+    font-size: 14px; 
+    font-weight: bold;
+    text-align: center; 
+    text-decoration: none; 
+    background-color: #35077e; 
+    color: #fff; 
+    border: none; 
+    cursor: pointer;
+    transition: background-color 02s ease-in-out; 
+}
+
+.product-card .btn:hover {
+    background-color: #46109c; 
+    }
+
+
+.footer {
+    background-color: #160335;
+    color: #fff;
+    padding: 20px; 
+    margin-top: auto; 
+}
+
+.footer p {
+    margin-bottom: 10px; 
+}
+
+.footer .social-media {
+    display: flex; 
+}
+
+.footer .social-media a {
+    display: inline-block; 
+    margin-right: 10px; 
+}
+
+.footer .copyright {
+    margin-top: 10px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.containerLogin {
+    position: relative;
+    width: 400px;
+    padding: 30px 50px;
+    background: #FFF;
+    text-align: center;
+    border-radius: 100% 0% 0% 0% / 55% 0% 0% 0%;
+}
+.containerLogin::after {
+    content: '';
+    position: absolute;
+    top: -200px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 420px;
+    background-image: url('./bg2.png');
+    background-position: top;
+    background-size: cover;
+    z-index: -11;
+}
+.containerLogin .rocket {
+    width: 300px;
+    position: absolute;
+    top: -120px;
+    right: -9%;
+    animation: animate 1s ease infinite alternate;
+    transition: all 0.3s ease;
+}
+.containerLogin .text {
+    margin: 30px 0 5px 0;
+}
+.containerLogin .text h1 {
+    color: #333;
+    font-size: 2.5rem;
+}
+.containerLogin .text p {
+    font-size: 1.5rem;
+    color: #333;
+}
+.containerLogin .form .animated-input {
+    display: flex;
+    flex-direction: column;
+}
+.containerLogin .form .animated-input input[type='text'] ,
+.containerLogin .form .animated-input input[type='password'] {
+    font-size: 1.3rem;
+    padding: 20px 10px 2px 10px;
+    outline: none;
+    border: none;
+    border-bottom: solid 1px #616161;
+    background: none;
+    transition: all 0.3s ease;
+}
+.containerLogin .form .animated-input input[type='text']:focus ,
+.containerLogin .form .animated-input input[type='password']:focus {
+    padding: 20px 10px;
+    border-color: #46109c;
+}
+.containerLogin .form .animated-input input[type='password'] {
+    margin-top: 10px;
+}
+.containerLogin .form .check {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    user-select: none;
+}
+.containerLogin .form .check input {
+    display: none;
+}
+.containerLogin .form .check .disc {
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+   background: #fff;
+   display: inline-block;
+   cursor: pointer;
+   box-shadow: 0 0 3px #000;
+   transition:  0.2s ease;
+}
+.containerLogin .form .check input:checked ~ .disc {
+    background: #9900FF;
+}
+.containerLogin .form .check .remember {
+    color: #9900FF;
+    font-weight: bold;
+}
+.containerLogin .form .check .forget a {
+    text-decoration: none;
+    color: #616161;
+}
+.containerLogin .form .check .forget a:hover {
+    color: #9900FF;
+}
+.containerLogin .btn {
+    border: none;
+    outline: none;
+    width: 200px;
+    padding: 15px;
+    margin: 10px auto;
+    font-size: 1.5rem;
+    color: #fff;
+    background: #35077e;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 1px 1px 6px #616161;
+    transition:  ALL 0.3s ease;
+}
+.containerLogin .btn:hover {
+    background: #46109c;
+}
+.containerLogin .account a {
+    text-decoration: none;
+    color: #616161;
+}
+.containerLogin .account a:hover {
+    color: #9900FF;
+}
+@keyframes animate {
+    0% {top: -120px;}
+    100% {top: -130px;}
+}
