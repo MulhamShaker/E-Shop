@@ -1,0 +1,22 @@
+{% extends 'globel.html' %}
+
+
+{% block content %}
+    <div class="containerLogin">
+        <div class="text">
+            <p>Welcome To Your E-Shop </p>
+            <h1>Sign Up</h1>
+        </div>
+        <form method="POST" class="form">
+            {% csrf_token %}
+            <div class="animated-input">
+                <input type="text" placeholder="Firtsname">
+                <input type="text" placeholder="Lastsname">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <input class="btn" type="submit" value="Sign Up">
+            </div>
+        </form>
+        <p class="account"><a href="{% url 'login' %}">Have You An Account?</a></p>
+    </div>
+{% endblock content %}
