@@ -105,13 +105,14 @@ body {
 
 .product-card {
     background-color: #f8f8f8; 
+    width: 25%;
     padding: 20px; 
     border-radius: 5px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .product-card img {
-    max-width: 40%; 
+    max-width: 25%; 
     height: auto; 
     object-fit: cover; 
     border-radius: 5px; 
